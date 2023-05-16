@@ -1,9 +1,10 @@
-import './App.css';
+import React from "react";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
-    <div className="bg-red-500">
-      <h1 className="text-4xl text-center text-white">Hello World</h1>
+    <div className="h-[100vh] px-5">
+      <Header />
     </div>
   );
 }
