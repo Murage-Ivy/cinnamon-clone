@@ -5,7 +5,7 @@ function Header() {
     return (
         <div className='flex h-20  items-center justify-between'>
             <Logo />
-            <HiMenuAlt1 className='text-2xl cursor-pointer' />
+            <HiMenuAlt1 className='text-2xl cursor-pointer text-hero_header' />
         </div>
     )
 }
