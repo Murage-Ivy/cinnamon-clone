@@ -13,6 +13,12 @@ module.exports = {
       backgroundImage: {
         "hero-pattern": "url('/public/assets/images/noise.png')",
       },
+      boxShadow: {
+        "inset-white": "rgb(255, 255, 255) 0px 0px 0px 199px inset",
+      },
+      transition:{
+        'transition': 'box-shadow all 0.5s ease-in-out',
+      }
     },
   },
   plugins: [],

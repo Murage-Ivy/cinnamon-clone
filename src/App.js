@@ -1,16 +1,17 @@
 import React from "react";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
+import Services from "./components/services/Services";
 
 function App() {
   return (
     <div className=" bg-hero-pattern bg-secondary text-h-[100vh]">
-  
       <main className="block">
-      <div className="">
-      <Header />
-      <Hero />
-      </div>
+        <div className="">
+          <Header />
+          <Hero />
+          <Services />
+        </div>
       </main>
     </div>
   );

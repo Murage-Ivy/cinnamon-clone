@@ -27,7 +27,7 @@ function Hero() {
             </div>
 
 
-            <div className='bg-hero_header px-6 pt-[96px]  '>
+            <div className='bg-hero_header px-6 pt-[96px]    '>
                 <div className='bg-[#f1c40f] '>
                     <img src='./assets/images/image_1.png' alt='code' />
                 </div>
@@ -71,7 +71,7 @@ function Hero() {
                     <h3 className='text-4xl font-bold text-[#222222] mt-4'>Fiona:  Engage &  <br />  Decide</h3>
                 </div>
 
-                <div>
+                <div className='pb-24'>
                     <p className='text-[#525252] text-base font-medium mt-4'>Fiona is a fintech consumer-facing website that enables users to search for financial products, discover them, and receive personalized recommendations.</p>
                 </div>
             </div>
