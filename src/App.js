@@ -4,7 +4,7 @@ import Hero from "./components/Hero/Hero";
 
 function App() {
   return (
-    <div className=" bg-hero-pattern bg-secondary text-h-[100vh] px-5">
+    <div className=" bg-hero-pattern bg-secondary text-h-[100vh]">
   
       <main className="block">
       <div className="">
