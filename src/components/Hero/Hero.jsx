@@ -4,7 +4,7 @@ import { AiOutlineArrowDown } from 'react-icons/ai'
 function Hero() {
     return (
         <>
-            <div className='px-5 '>
+            <div className='px-10 '>
                 <div className='mb-6'>
                     <h1 className='text-[40px] font-extrabold text-hero_header'>Results focused <br /> design & <br /> development agency.</h1>
                 </div>
