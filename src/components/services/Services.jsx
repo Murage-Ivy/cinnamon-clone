@@ -28,6 +28,12 @@ function Services() {
     }
     ]
 
+    const positionList = ['Web development', 'Mobile development', 'Quality assurance', 'Marketing', 'Project management', 'Human resources', 'Sales', 'Fluffy friends']
+
+    const positionItems = positionList.map((position, index) => <div className='py-4' key={index}>
+        <p className="text-xl font-bold tracking-wider" >{position}</p>
+    </div>)
+
     const serviceItems = serviceList.map(service => <div key={service.id} className='leading-10'>
         <div className='w-12 h-12 mt-8'>
             <img className="w-full" src={service.image} alt={service.title} />
@@ -53,7 +59,7 @@ function Services() {
                 </div>
             </div>
 
-            <div className='pb-24 grid gap-8 grid-rows-[1fr 1fr 1fr] auto grid-cols-4 bg-white px-5'>
+            <div className='pb-24 grid gap-8 grid-rows-[1fr 1fr 1fr] auto grid-cols-4 bg-[#F7F7F7]  px-5'>
                 <div className='col-span-4'>
                     <h2 className='  text-black text-4xl font-bold pt-24 pb-8 '>Agile team <br /> on demand</h2>
                 </div>
@@ -71,8 +77,69 @@ function Services() {
                 <div className='row-span-1 col-span-4'>
                     <button className='transition-shadow duration-400 ease-in-out delay-0 hover:shadow-inset-white outline-none px-8 pt-4 pb-3 bg-[#5135FF] text-white  text-base font-medium hover:bg-white hover:border-2 border-[#5135FF] hover:text-[#5135FF]'>See How It Works</button>
                 </div>
-
             </div>
+
+
+            <div className='bg-white py-24 px-5 flex flex-col'>
+                <div className=''>
+                </div>
+                <div className='mb-8'>
+                    <h3 className='text-[#222222] text-3xl font-bold'>
+                        Their team’s design <br /> skills definitely set <br /> them apart.
+                    </h3>
+                </div>
+                <div className='mb-8'>
+                    <p className='font-[500] text-lg'>
+                        Wonderful experience; the project manager and the designer were available for all my questions and at no point did I feel they struggle to create the design.The result is a-b-s-o-l-u-t-e-l-y perfect. Top-notch!
+                    </p>
+                </div>
+
+                <div className='flex flex-col items-stretch justify-center'>
+                    <img className='w-[20%] my-4' src='./assets/images/image_profile_avatar.webp' alt='testimonial' />
+                    <h5 className='font-bold text-xl'>Eric C</h5>
+                    <p className='text-base font-medium'>Founder Websun Solutions UG. Berlin, Germany</p>
+                </div>
+
+                <div className='flex items-center justify-between w-1/2 mt-10'>
+                    <img className="w-[30%]" src='./assets/images/image_arrow_2.webp' alt='arrow 1' />
+                    <img className="w-[30%]" src='./assets/images/image_arrow_1.webp' alt='arrow 2' />
+                </div>
+            </div>
+
+            <div className='pb-24  bg-[#F7F7F7]  px-5'>
+                <div className='col-span-4'>
+                    <h2 className='  text-black text-4xl font-bold pt-24 pb-8 '>Who We are</h2>
+                </div>
+
+                <div className='pt-8 pb-12'>
+                    <p className='relative text-[#5135FF] before:content-[""] before:border-2 before:border-[#5135FF] before:w-[15%] before:absolute before:top-[50%] before:left-0 font-bold tracking-widest pl-16'>Product design</p>
+                </div>
+
+                <div>
+                    <img src="./assets/images/image_team.webp" alt='team' />
+                </div>
+
+                <div className='mt-8'>
+                    <p className='text-base  font-medium'>
+                        Our exceptional designers make it their business to create logical, clean, and effective UX/UI for both web and mobile. Bringing together world-class technical skills and a plethora of creativity, they work with development teams to produce engaging and impactful digital experiences for the end user.                    </p>
+                </div>
+
+                <div className='mt-8'>
+                    <p>Get closer to our Design Team and see what they have prepared for you in the </p>
+
+                    <a className='text-[#5135FF] py-4' href='https://www.staging.dopamine.cinnamon.services/' target='blank'>
+                        <p>Design Dopamine Newsletter.</p>
+                    </a>
+                </div>
+
+                <div className='mt-10'>
+                    <button className='transition-shadow duration-400 ease-in-out delay-0 hover:shadow-inset-white outline-none px-8 pt-4 pb-3 bg-[#5135FF] text-white  text-base font-medium hover:bg-white hover:border-2 border-[#5135FF] hover:text-[#5135FF]'>See Open Positions</button>
+                </div>
+
+                <div className='mt-8'>{positionItems}</div>
+            </div>
+
+
         </>
     )
 }
