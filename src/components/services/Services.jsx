@@ -136,7 +136,7 @@ function Services() {
                     <button className='transition-shadow duration-400 ease-in-out delay-0 hover:shadow-inset-white outline-none px-8 pt-4 pb-3 bg-[#5135FF] text-white  text-base font-medium hover:bg-white hover:border-2 border-[#5135FF] hover:text-[#5135FF]'>See Open Positions</button>
                 </div>
 
-                <div className='mt-8'>{positionItems}</div>
+                <div className='mt-8' >{positionItems}</div>
             </div>
 
 

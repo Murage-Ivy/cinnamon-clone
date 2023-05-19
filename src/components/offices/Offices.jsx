@@ -24,7 +24,7 @@ function Offices() {
   ]
 
   const offices = officeList.map(office => <div key={office.id} className='  '>
-    <div className='min-w-[300px]'>
+    <div className='min-w-[300px] md:min-w-[500px]'>
       <img className='w-[full] block ' src={office.image} alt={office.name} />
     </div>
     <div className='grid grid-cols-[10%_1fr]  mt-6 hover:cursor-pointer hover:text-[#5135FF] '>
@@ -36,9 +36,9 @@ function Offices() {
     </div>
   </div>)
   return (
-    <div className='relative   mt-12 bg-white px-5 py-8 '>
-      <h3 className='text-2xl font-bold'>Our Offices</h3>
-      <div className=' flex gap-8 justify-between overflow-x-scroll '>
+    <div className='relative   mt-12 bg-white px-5 py-8 md:px-24'>
+      <h3 className='text-2xl font-bold md:text-6xl md:mb-8'>Our Offices</h3>
+      <div className=' flex gap-8 justify-between overflow-x-scroll no-scrollbar '>
         {offices}
       </div>
     </div>
