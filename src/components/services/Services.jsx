@@ -30,7 +30,7 @@ function Services() {
 
     const positionList = ['Web development', 'Mobile development', 'Quality assurance', 'Marketing', 'Project management', 'Human resources', 'Sales', 'Fluffy friends']
 
-    const positionItems = positionList.map((position, index) => <div className=' transition-all topic-hover relative py-4 hover:text-[#5135FF] hover:before:content-[""] hover:before:border-2 hover:before:border-[#5135FF] hover:before:w-[8%] hover:before:absolute hover:before:top-[50%] cursor-pointer' key={index}>
+    const positionItems = positionList.map((position, index) => <div className=' transition-all topic-hover relative py-4 hover:text-[#5135FF] hover:before:content-[""] hover:before: hover:before:border-[#5135FF] hover:before:w-[8%] hover:before:absolute hover:before:top-[50%] cursor-pointer' key={index}>
         <p className="text-xl font-bold tracking-wider hover:pl-14 transition-all topic-hover  " >{position}</p>
     </div>)
 
@@ -52,44 +52,49 @@ function Services() {
                     <h2 className='text-hero_header text-4xl font-bold pb-8 '>Our services</h2>
                     {serviceItems}
                     <div className='mt-12'>
-                        <button className=" transition-shadow duration-400 ease-in-out delay-0 hover:shadow-inset-white outline-none px-8 pt-4 pb-3 bg-[#5135FF] text-[#ffffff]  text-base font-medium hover:bg-white hover:border-2 border-[#5135FF] hover:text-[#5135FF]">
+                        <button className=" transition-shadow duration-400 ease-in-out delay-0 hover:shadow-inset-white outline-none px-8 pt-4 pb-3 bg-[#5135FF] text-[#ffffff]  text-base font-medium hover:bg-white hover: border-[#5135FF] hover:text-[#5135FF]">
                             See Our Services
                         </button>
                     </div>
                 </div>
             </div>
 
-            <div className='pb-24 grid gap-8 grid-rows-[1fr 1fr 1fr] auto grid-cols-4 bg-[#F7F7F7]  px-10'>
-                <div className='col-span-4'>
-                    <h2 className='  text-black text-4xl font-bold pt-24 pb-8 '>Agile team <br /> on demand</h2>
+            <div className='relative pb-24 grid gap-8 grid-rows-[1fr 1fr 1fr]  grid-cols-3 bg-[#F7F7F7]  px-10 lg:flex lg:justify-between lg:items-center lg:py-24'>
+                <div className='col-span-4 '>
+                    <h2 className=' lg:order-1 text-black text-4xl font-bold pt-24 pb-8 lg:text-6xl '>Agile team <br /> on demand</h2>
                 </div>
 
-                <div className='col-span-4 '>
+                <div className='col-span-4 lg:order-3  lg:absolute lg:bottom-0 lg:right-0 '>
                     <img src='./assets/images/image_agile.webp' alt='agile' />
                 </div>
+                <div className='relative lg:order-2 col-span-4 lg:w-[40%] lg:mx-auto  '>
+                    <div  >
+                        <p className='text-base text-[#525252] font-medium'>
+                            By hiring and managing talented people with skills specific to your project, we build you a team that’s accomplished, agile and scalable in both directions.
+                        </p>
+                    </div>
 
-                <div className='col-span-4'>
-                    <p className='text-base text-[#525252] font-medium'>
-                        By hiring and managing talented people with skills specific to your project, we build you a team that’s accomplished, agile and scalable in both directions.
-                    </p>
-                </div>
-
-                <div className='row-span-1 col-span-4'>
-                    <button className='transition-shadow duration-400 ease-in-out delay-0 hover:shadow-inset-white outline-none px-8 pt-4 pb-3 bg-[#5135FF] text-white  text-base font-medium hover:bg-white hover:border-2 border-[#5135FF] hover:text-[#5135FF]'>See How It Works</button>
+                    <div className='mt-6'>
+                        <button className='transition-shadow duration-400 ease-in-out delay-0 hover:shadow-inset-white outline-none px-8 pt-4 pb-3 bg-[#5135FF] text-white  text-base font-medium hover:bg-white hover:border-2 hover:border-[#5135FF] hover:text-[#5135FF]'>See How It Works</button>
+                    </div>
                 </div>
             </div>
 
 
-            <div className='bg-white py-24 px-10 flex flex-col'>
+            <div className='bg-white py-24 px-10 flex flex-col lg:w-[80%]'>
                 <div className=''>
                 </div>
                 <div className='mb-8'>
-                    <h3 className='text-[#222222] text-3xl font-bold'>
+                    <h3 className='text-[#222222] text-3xl font-bold md:hidden'>
                         Their team’s design <br /> skills definitely set <br /> them apart.
+                    </h3>
+
+                    <h3 className='text-[#222222] text-3xl font-bold md:block hidden'>
+                        Their team’s design skills definitely set them apart.
                     </h3>
                 </div>
                 <div className='mb-8'>
-                    <p className='font-[500] text-lg'>
+                    <p className='font-normal text-lg'>
                         Wonderful experience; the project manager and the designer were available for all my questions and at no point did I feel they struggle to create the design.The result is a-b-s-o-l-u-t-e-l-y perfect. Top-notch!
                     </p>
                 </div>
@@ -100,9 +105,9 @@ function Services() {
                     <p className='text-base font-medium'>Founder Websun Solutions UG. Berlin, Germany</p>
                 </div>
 
-                <div className='flex items-center justify-between w-1/2 mt-10'>
-                    <img className="w-[30%]" src='./assets/images/image_arrow_2.webp' alt='arrow 1' />
-                    <img className="w-[30%]" src='./assets/images/image_arrow_1.webp' alt='arrow 2' />
+                <div className='flex items-center justify-between w-1/2 mt-10 md:w-[300px]'>
+                    <img className="w-[30%] " src='./assets/images/image_arrow_2.webp' alt='arrow 1' />
+                    <img className="w-[30%] " src='./assets/images/image_arrow_1.webp' alt='arrow 2' />
                 </div>
             </div>
 
@@ -111,7 +116,7 @@ function Services() {
                     <h2 className='  text-black text-4xl font-bold pt-24 pb-8 '>Who We are</h2>
 
                     <div className='pt-8 pb-12'>
-                        <p className='relative text-[#5135FF] before:content-[""] before:border-2 before:border-[#5135FF] before:w-[15%] sm:before:w-[8%] before:absolute before:top-[50%] sm:before:top-[35%] before:left-0 font-bold tracking-widest pl-16'>Product design</p>
+                        <p className='relative text-[#5135FF] before:content-[""] before: before:border-[#5135FF] before:w-[15%] sm:before:w-[8%] before:absolute before:top-[50%] sm:before:top-[35%] before:left-0 font-bold tracking-widest pl-16'>Product design</p>
                     </div>
 
                     <div className='mt-8 md:order-1 md:block hidden' >{positionItems}</div>
@@ -119,7 +124,7 @@ function Services() {
                 </div>
 
                 <div className='pt-8 pb-12 hidden '>
-                    <p className='relative text-[#5135FF] before:content-[""] before:border-2 before:border-[#5135FF] before:w-[15%] before:absolute before:top-[50%] before:left-0 font-bold tracking-widest pl-16'>Product design</p>
+                    <p className='relative text-[#5135FF] before:content-[""] before: before:border-[#5135FF] before:w-[15%] before:absolute before:top-[50%] before:left-0 font-bold tracking-widest pl-16'>Product design</p>
                 </div>
                 <div className='md:order-2 '>
                     <div>
@@ -141,7 +146,7 @@ function Services() {
                     </div>
 
                     <div className='mt-10'>
-                        <button className='transition-shadow duration-400 ease-in-out delay-0 hover:shadow-inset-white outline-none px-8 pt-4 pb-3 bg-[#5135FF] text-white  text-base font-medium hover:bg-white hover:border-2 border-[#5135FF] hover:text-[#5135FF]'>See Open Positions</button>
+                        <button className='transition-shadow duration-400 ease-in-out delay-0 hover:shadow-inset-white outline-none px-8 pt-4 pb-3 bg-[#5135FF] text-white  text-base font-medium hover:bg-white hover: border-[#5135FF] hover:text-[#5135FF]'>See Open Positions</button>
                     </div>
                 </div>
                 <div className='mt-8 md:order-1 md:hidden' >{positionItems}</div>
