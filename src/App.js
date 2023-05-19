@@ -5,10 +5,11 @@ import Services from "./components/services/Services";
 import CinnamonCollege from "./components/cinnamonCollege/CinnamonCollege";
 import Offices from "./components/offices/Offices";
 import TechTopics from "./components/techTopics/TechTopics";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
-    <div className=" bg-hero-pattern bg-secondary text-h-[100vh] ">
+    <div className=" bg-white text-h-[100vh] ">
       <main className="block">
         <div className="">
           <Header />
@@ -17,6 +18,7 @@ function App() {
           <CinnamonCollege />
           <Offices />
           <TechTopics/>
+          <Footer/>
         </div>
       </main>
     </div>

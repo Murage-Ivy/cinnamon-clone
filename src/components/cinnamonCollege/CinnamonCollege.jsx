@@ -3,7 +3,7 @@ import React from 'react'
 function CinnamonCollege() {
     const positions = ['Flutter Development Team Lead', 'Lead Generation Assistant', 'Mobile Development Team Lead',]
 
-    const positionItems = positions.map(position => <div className='grid grid-cols-[85%_auto] items-center  border-b-2 border-gray-600 py-6'>
+    const positionItems = positions.map(position => <div className='grid grid-cols-[85%_auto] items-center  border-b-2 border-gray-600 py-6 text-white'>
         <p className='text-2xl font-bold tracking-wider pr-3' >{position}</p>
         <img src='./assets/images/arrow_right.webp' alt={position} />
     </div>)
@@ -22,7 +22,7 @@ function CinnamonCollege() {
             </div>
         </div>
 
-        <div className='text-white px-5 pt-20'>
+        <div className='text-white px-5 pt-20 bg-hero-pattern bg-secondary  '>
             <div className='mb-16'>
                 <h2 className='font-bold text-4xl tracking-widest mb-8'>We're growing</h2>
                 <p className='font-medium text-lg'>Jump on board with Cinnamon and get the privilege of working on challenging projects for leading global companies! Make the world a better, more connected place.</p>
@@ -31,11 +31,12 @@ function CinnamonCollege() {
                 </a>
             </div>
 
-            <div>
+            <div >
                 {positionItems}
             </div>
 
         </div>
+
     </>
     )
 }

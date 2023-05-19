@@ -47,7 +47,7 @@ function Services() {
     </div>)
     return (
         <>
-            <div className='py-24  px-10'>
+            <div className='py-24  px-10 bg-hero-pattern bg-secondary '>
                 <div>
                     <h2 className='text-hero_header text-4xl font-bold pb-8 '>Our services</h2>
                     {serviceItems}

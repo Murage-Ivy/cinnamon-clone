@@ -40,7 +40,7 @@ function TechTopics() {
         </div>
         <div>
             <h5 className='font-bold py-3 text-sm'>{topic.initials}</h5>
-            <div className='flex justify-between text-sm w-4/5'>
+            <div className='flex justify-between text-sm w-4/5 tracking-wider'>
                 <p>{topic.location}</p>
                 <p className='text-[10px]'>⭐</p>
                 <p>{topic.date}</p>
@@ -48,16 +48,16 @@ function TechTopics() {
                 <p className='text-[10px]'>⭐</p>
                 <p>{topic.time}</p>
             </div>
-            <div>
-                <h3 className='font-bold'>{topic.title}</h3>
+            <div className='py-2'>
+                <h3 className='font-bold tracking-wide'>{topic.title}</h3>
             </div>
         </div>
     </div>)
     return (
         <>
             <div className='relative bg-white px-5'>
-                <div>
-                    <h2 className='text-hero_header text-4xl font-bold pb-8 '>
+                <div className='pt-6'>
+                    <h2 className=' text-4xl font-bold pb-8 '>
                         Stay in the loop <br />
                         on tech topics
                     </h2>
@@ -67,26 +67,22 @@ function TechTopics() {
                     {topics}
                 </div>
 
-                <div className=' flex text-[#5135FF] w-[60%]  justify-between items-center mt-12'>
+                <div className=' flex text-[#5135FF] w-[55%]  justify-between items-center mt-12'>
                     <MdArrowForwardIos />
                     <p className='border-b-2 border-b-[#5135FF]  font-bold'>VIEW MORE BLOGS</p>
                 </div>
 
                 <div className="text-center mt-12 ">
-                    <h2 className=' text-4xl font-bold pb-8 '>
-                        Let's work together
+                    <h2 className=' text-5xl font-bold pb-8 tracking-wider '>
+                        Let's work together.
                     </h2>
                     <button className='bg-[#5135FF] text-white pt-4 px-8 pb-3 text-center'>Contact us</button>
 
-                    <div className='absolute w-1/2 left-0 pt-4 mt-4'>
+                    <div className='relative w-1/2 left-[-10px] pt-4 mt-4'>
                         <img className='w-[80%]' src='./assets/images/corner.webp' alt='corner' />
                     </div>
                 </div>
-
-
             </div>
-
-
         </>
     )
 }
