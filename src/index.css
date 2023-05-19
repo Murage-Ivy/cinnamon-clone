@@ -19,6 +19,10 @@
             display: none;
         }
 
+        .topic-hover::-webkit-transform {
+            transform: translateX(calc((32px + 12px) * -1));
+        }
+
         /* Hide scrollbar for IE, Edge and Firefox */
         .no-scrollbar {
             -ms-overflow-style: none;

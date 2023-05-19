@@ -30,8 +30,8 @@ function Services() {
 
     const positionList = ['Web development', 'Mobile development', 'Quality assurance', 'Marketing', 'Project management', 'Human resources', 'Sales', 'Fluffy friends']
 
-    const positionItems = positionList.map((position, index) => <div className='py-4' key={index}>
-        <p className="text-xl font-bold tracking-wider" >{position}</p>
+    const positionItems = positionList.map((position, index) => <div className=' transition-all topic-hover relative py-4 hover:text-[#5135FF] hover:before:content-[""] hover:before:border-2 hover:before:border-[#5135FF] hover:before:w-[8%] hover:before:absolute hover:before:top-[50%] cursor-pointer' key={index}>
+        <p className="text-xl font-bold tracking-wider hover:pl-14 transition-all topic-hover  " >{position}</p>
     </div>)
 
     const serviceItems = serviceList.map(service => <div key={service.id} className='leading-10'>
@@ -52,7 +52,7 @@ function Services() {
                     <h2 className='text-hero_header text-4xl font-bold pb-8 '>Our services</h2>
                     {serviceItems}
                     <div className='mt-12'>
-                        <button className="transition-shadow duration-400 ease-in-out delay-0 hover:shadow-inset-white outline-none px-8 pt-4 pb-3 bg-[#5135FF] text-[#ffffff]  text-base font-medium hover:bg-white hover:border-2 border-[#5135FF] hover:text-[#5135FF]">
+                        <button className=" transition-shadow duration-400 ease-in-out delay-0 hover:shadow-inset-white outline-none px-8 pt-4 pb-3 bg-[#5135FF] text-[#ffffff]  text-base font-medium hover:bg-white hover:border-2 border-[#5135FF] hover:text-[#5135FF]">
                             See Our Services
                         </button>
                     </div>
@@ -106,37 +106,45 @@ function Services() {
                 </div>
             </div>
 
-            <div className='pb-24  bg-[#F7F7F7]  px-10'>
+            <div className='pb-24  bg-[#F7F7F7]  px-10 md:grid md:grid-cols-2 md:items-center'>
                 <div>
                     <h2 className='  text-black text-4xl font-bold pt-24 pb-8 '>Who We are</h2>
+
+                    <div className='pt-8 pb-12'>
+                        <p className='relative text-[#5135FF] before:content-[""] before:border-2 before:border-[#5135FF] before:w-[15%] sm:before:w-[8%] before:absolute before:top-[50%] sm:before:top-[35%] before:left-0 font-bold tracking-widest pl-16'>Product design</p>
+                    </div>
+
+                    <div className='mt-8 md:order-1 md:block hidden' >{positionItems}</div>
+
                 </div>
 
-                <div className='pt-8 pb-12'>
+                <div className='pt-8 pb-12 hidden '>
                     <p className='relative text-[#5135FF] before:content-[""] before:border-2 before:border-[#5135FF] before:w-[15%] before:absolute before:top-[50%] before:left-0 font-bold tracking-widest pl-16'>Product design</p>
                 </div>
+                <div className='md:order-2 '>
+                    <div>
+                        <img src="./assets/images/image_team.webp" alt='team' />
+                    </div>
 
-                <div>
-                    <img src="./assets/images/image_team.webp" alt='team' />
+
+                    <div className='mt-8'>
+                        <p className='text-base font-medium'>
+                            Our exceptional designers make it their business to create logical, clean, and effective UX/UI for both web and mobile. Bringing together world-class technical skills and a plethora of creativity, they work with development teams to produce engaging and impactful digital experiences for the end user.                    </p>
+                    </div>
+
+                    <div className='mt-8'>
+                        <p>Get closer to our Design Team and see what they have prepared for you in the </p>
+
+                        <a className='text-[#5135FF] py-4' href='https://www.staging.dopamine.cinnamon.services/' target='blank'>
+                            <p>Design Dopamine Newsletter.</p>
+                        </a>
+                    </div>
+
+                    <div className='mt-10'>
+                        <button className='transition-shadow duration-400 ease-in-out delay-0 hover:shadow-inset-white outline-none px-8 pt-4 pb-3 bg-[#5135FF] text-white  text-base font-medium hover:bg-white hover:border-2 border-[#5135FF] hover:text-[#5135FF]'>See Open Positions</button>
+                    </div>
                 </div>
-
-                <div className='mt-8'>
-                    <p className='text-base  font-medium'>
-                        Our exceptional designers make it their business to create logical, clean, and effective UX/UI for both web and mobile. Bringing together world-class technical skills and a plethora of creativity, they work with development teams to produce engaging and impactful digital experiences for the end user.                    </p>
-                </div>
-
-                <div className='mt-8'>
-                    <p>Get closer to our Design Team and see what they have prepared for you in the </p>
-
-                    <a className='text-[#5135FF] py-4' href='https://www.staging.dopamine.cinnamon.services/' target='blank'>
-                        <p>Design Dopamine Newsletter.</p>
-                    </a>
-                </div>
-
-                <div className='mt-10'>
-                    <button className='transition-shadow duration-400 ease-in-out delay-0 hover:shadow-inset-white outline-none px-8 pt-4 pb-3 bg-[#5135FF] text-white  text-base font-medium hover:bg-white hover:border-2 border-[#5135FF] hover:text-[#5135FF]'>See Open Positions</button>
-                </div>
-
-                <div className='mt-8' >{positionItems}</div>
+                <div className='mt-8 md:order-1 md:hidden' >{positionItems}</div>
             </div>
 
 

@@ -17,7 +17,7 @@ function CinnamonCollege() {
 
             <div className='py-16 lg:w-[40%] '>
                 <p className='text-base text-[#000000] font-medium'>Seize the unique opportunity to participate in a wide range of courses conducted by professionals with an impeccable reputation in the digital industry.</p>
-                <button className=' mt-8 bg-[#5135FF] text-white pt-4 pb-3 px-8 h-[48px] '  >
+                <button className='hover:bg-white hover:text-[#5135FF] hover:border-2 hover:border-[#5135FF] mt-8 bg-[#5135FF] text-white pt-4 pb-3 px-8 h-[48px] flex justify-center items-center '  >
                     See How It Works
                 </button>
             </div>
@@ -32,7 +32,7 @@ function CinnamonCollege() {
                 <h2 className='font-bold text-4xl tracking-widest mb-8'>We're growing</h2>
                 <p className='font-medium text-lg lg:w-[80%]'>Jump on board with Cinnamon and get the privilege of working on challenging projects for leading global companies! Make the world a better, more connected place.</p>
                 <a href='/careers'>
-                    <button className='pt-4  px-8 pb-3 bg-[#5135FF] mt-8'>See All Positions</button>
+                    <button className=' hover:bg-white hover:text-[#5135FF] hover:border-2 hover:border-[#5135FF] pt-4  px-8 pb-3 bg-[#5135FF] mt-8'>See All Positions</button>
                 </a>
             </div>
 
