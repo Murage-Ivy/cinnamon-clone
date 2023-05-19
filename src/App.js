@@ -4,6 +4,7 @@ import Hero from "./components/Hero/Hero";
 import Services from "./components/services/Services";
 import CinnamonCollege from "./components/cinnamonCollege/CinnamonCollege";
 import Offices from "./components/offices/Offices";
+import TechTopics from "./components/techTopics/TechTopics";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Services />
           <CinnamonCollege />
           <Offices />
+          <TechTopics/>
         </div>
       </main>
     </div>
