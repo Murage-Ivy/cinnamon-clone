@@ -55,53 +55,63 @@ function Footer() {
     },
     ]
 
-    const socialList = socialIcons.map(social => <a href={social.link} target='blank'>{social.icon}</a>)
-    const locationsList = locations.map(location => <div key={location.id} className='py-4'>
+    const socialList = socialIcons.map(social => <a className="px-3" href={social.link} target='blank'>{social.icon}</a>)
+    const locationsList = locations.map(location => <div key={location.id} className='py-4 '>
         <p className='font-bold text-lg '>{location.name}</p>
-        <p className='text-sm font-light'>{location.address}</p>
-        <p className='text-sm font-light'>{location.tel}</p>
+        <p className='text-sm font-light md:pr-16'>{location.address}</p>
+        <p className='text-sm font-light md:pr-6'>{location.tel}</p>
     </div>
     )
 
     const navItems = navList.map((item, index) => <a className='py-2' key={index} href='!#'>{item}</a>)
     return (
-        <div className=' bg-hero-pattern bg-secondary px-5 text-white pt-16 pb-4'>
-            <Logo />
-            <div className='py-6 mt-3'>
-                <h4 className='font-bold text-4xl'>All software, zero bullshit. </h4>
+        <div className=' bg-hero-pattern bg-secondary px-5 text-white pt-16 pb-4  md:px-20 '>
+            <div className='md:grid grid-cols-[40%_1fr] md:items-center'>
+                <Logo />
+                <div className='py-6 mt-3 '>
+                    <h4 className='font-bold text-4xl'>All software, zero bullshit. </h4>
+                </div>
+                <div className='grid grid-cols-2 grid-rows-3 md:flex md:flex-col  '>
+                    {navItems}
+                </div>
+
+                <div className='grid grid-cols-2 grid-rows-2 py-6 gap-3 md:flex md:justify-between' >
+                    {locationsList}
+                </div>
             </div>
-            <div className='grid grid-cols-2 grid-rows-3'>
-                {navItems}
+            <div className='md:flex md:justify-between md:items-end  '>
+                <div className='py-6 md:order-2 md:py-0 '>
+                    <h5 className='text-white font-bold tracking-wide'>Our newsletter</h5>
+                    <input type='email' placeholder='Your E-mail' className='border-b-2 outline-none w-full py-3 bg-transparent placeholder:text-white' />
+                    <button className=' text-white px-4 py-3  w-full bg-[#5135FF] tracking-wide font-semibold mt-4'>Subscribe</button>
+                </div>
+
+                <div className=' mx-auto md:mx-0 py-6 md:py-0 md:order-3'>
+                    <div className='w-[200px] mx-auto py-6'> <img src='./assets/images/pangea-badge.7734fbc8.svg' alt='pangea-badge' className='mb-4 block mx-auto w-full' /></div>
+                    <div className='w-[216px] mx-auto pb-6'><img src='./assets/images/bottom_footer.webp' alt='bottom' className='mt-4 block mx-auto  max-w-full' /></div>
+
+                </div>
+
+                <div className='text-center md:order-1  '>
+                    <a href="mailto:hello@cinnamon.agency" className='underline'>hello@cinnamon.agency</a>
+                </div>
             </div>
 
-            <div className='grid grid-cols-2 grid-rows-2 py-6 gap-3' >
-                {locationsList}
+            <div className=' md:flex md:justify-between md:items-center md:border-t-2 md:mt-6 '>
+                <div className='flex justify-between items-center py-6 border-y-2 mt-6  md:hidden md:border-none md:w-auto  '>
+                    {socialList}
+                </div>
+
+                <div className='flex justify-evenly py-6 md:w-auto '>
+                    <p className='mr-4'>© 2023 Cinnamon</p>
+                    <p className='underline'>Privacy policy</p>
+                </div>
+
+                <div className=' hidden  justify-between items-center py-6 border-y-2  md:flex  md:border-none md:w-auto  '>
+                    {socialList}
+                </div>
             </div>
 
-            <div className='py-6'>
-                <h5 className='text-white font-bold tracking-wide'>Our newsletter</h5>
-                <input type='email' placeholder='Your E-mail' className='border-b-2  w-full py-3 bg-transparent placeholder:text-white' />
-                <button className=' text-white px-4 py-3 w-full bg-[#5135FF] tracking-wide font-semibold mt-4'>Subscribe</button>
-            </div>
-
-            <div className=' mx-auto py-6'>
-                <div className='w-[200px] mx-auto py-6'> <img src='./assets/images/pangea-badge.7734fbc8.svg' alt='pangea-badge' className='mb-4 block mx-auto w-full' /></div>
-                <div className='w-[216px] mx-auto pb-6'><img src='./assets/images/bottom_footer.webp' alt='bottom' className='mt-4 block mx-auto  max-w-full' /></div>
-
-            </div>
-
-            <div className='text-center'>
-                <a href="mailto:hello@cinnamon.agency" className='underline'>hello@cinnamon.agency</a>
-            </div>
-
-            <div className='flex justify-between py-6 border-y-2 mt-6'>
-                {socialList}
-            </div>
-
-            <div className='flex justify-evenly py-6'>
-                <p>© 2023 Cinnamon</p>
-                <p className='underline'>Privacy policy</p>
-            </div>
         </div>
     )
 }
