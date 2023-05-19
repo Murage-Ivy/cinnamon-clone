@@ -56,24 +56,24 @@ function TechTopics() {
     return (
         <>
             <div className='relative bg-white px-5 '>
-                <div className='pt-6 md:px-24'>
+                <div className='pt-6 lg:px-24'>
                     <h2 className='  mb-6 text-4xl font-bold pb-8  md:text-6xl'>
                         Stay in the loop <br />
                         on tech topics
                     </h2>
                 </div>
 
-                <div className=' flex gap-8 justify-between overflow-x-auto no-scrollbar md:px-24 '>
+                <div className=' flex gap-8 justify-between overflow-x-auto no-scrollbar lg:px-24 '>
                     {topics}
                 </div>
 
-                <div className=' flex text-[#5135FF] w-[55%]  justify-between items-center mt-12 md:w-fit md:px-24'>
+                <div className=' flex text-[#5135FF] w-[55%]  justify-between items-center mt-12 md:w-fit lg:px-24'>
                     <MdArrowForwardIos />
                     <p className='border-b-2 border-b-[#5135FF]  font-bold'>VIEW MORE BLOGS</p>
                 </div>
 
                 <div className="relative text-center mt-12 md:flex md:justify-between  md:py-48">
-                    <div className='relative md:flex md:flex-col  md:items-center md:justify-center md:w-1/2 mx-auto ' >
+                    <div className='relative md:flex md:flex-col  md:items-center md:justify-center md:w-4/5 mx-auto ' >
                         <h2 className='text-5xl font-bold pb-8 tracking-wider md:text-center md:w-full'>Have a project in mind?</h2>
                         <h2 className=' text-5xl font-bold pb-8 tracking-wider '>
                             Let's work together.

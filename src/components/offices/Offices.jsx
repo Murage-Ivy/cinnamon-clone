@@ -36,7 +36,7 @@ function Offices() {
     </div>
   </div>)
   return (
-    <div className='relative   mt-12 bg-white px-5 py-8 md:px-24'>
+    <div className='relative   mt-12 bg-white px-5 py-8 lg:px-24'>
       <h3 className='text-2xl font-bold md:text-6xl md:mb-8'>Our Offices</h3>
       <div className=' flex gap-8 justify-between overflow-x-scroll no-scrollbar '>
         {offices}
