@@ -35,7 +35,7 @@ function TechTopics() {
 
 
     const topics = techTopics.map(topic => <div key={topic.id} className='  '>
-        <div className='min-w-[400px]'>
+        <div className='min-w-[400px] md:w-[600px]'>
             <img className='w-[full] block ' src={topic.image} alt={topic.title} />
         </div>
         <div>
@@ -55,31 +55,34 @@ function TechTopics() {
     </div>)
     return (
         <>
-            <div className='relative bg-white px-5'>
-                <div className='pt-6'>
-                    <h2 className=' text-4xl font-bold pb-8 '>
+            <div className='relative bg-white px-5 '>
+                <div className='pt-6 md:px-24'>
+                    <h2 className='  mb-6 text-4xl font-bold pb-8  md:text-6xl'>
                         Stay in the loop <br />
                         on tech topics
                     </h2>
                 </div>
 
-                <div className=' flex gap-8 justify-between overflow-x-scroll '>
+                <div className=' flex gap-8 justify-between overflow-x-auto no-scrollbar md:px-24 '>
                     {topics}
                 </div>
 
-                <div className=' flex text-[#5135FF] w-[55%]  justify-between items-center mt-12'>
+                <div className=' flex text-[#5135FF] w-[55%]  justify-between items-center mt-12 md:w-fit md:px-24'>
                     <MdArrowForwardIos />
                     <p className='border-b-2 border-b-[#5135FF]  font-bold'>VIEW MORE BLOGS</p>
                 </div>
 
-                <div className="text-center mt-12 ">
-                    <h2 className=' text-5xl font-bold pb-8 tracking-wider '>
-                        Let's work together.
-                    </h2>
-                    <button className='bg-[#5135FF] text-white pt-4 px-8 pb-3 text-center'>Contact us</button>
+                <div className="relative text-center mt-12 md:flex md:justify-between  md:py-48">
+                    <div className='relative md:flex md:flex-col  md:items-center md:justify-center md:w-1/2 mx-auto ' >
+                        <h2 className='text-5xl font-bold pb-8 tracking-wider md:text-center md:w-full'>Have a project in mind?</h2>
+                        <h2 className=' text-5xl font-bold pb-8 tracking-wider '>
+                            Let's work together.
+                        </h2>
+                        <button className=' hover:bg-white hover:text-[#5135FF] hover:border-2 hover:border-[#5135FF] bg-[#5135FF] text-white pt-4 px-8 pb-3 text-center md:w-fit transition-all'>Contact us</button>
+                    </div>
 
-                    <div className='relative w-1/2 left-[-10px] pt-4 mt-4'>
-                        <img className='w-[80%]' src='./assets/images/corner.webp' alt='corner' />
+                    <div className='relative w-1/2 left-[-10px] md:absolute md:left-[-12px] md:bottom-0 pt-4 mt-4'>
+                        <img className='w-[80%] md:w-[60%]' src='./assets/images/corner.webp' alt='corner' />
                     </div>
                 </div>
             </div>
