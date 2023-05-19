@@ -107,7 +107,7 @@ function Services() {
             </div>
 
             <div className='pb-24  bg-[#F7F7F7]  px-10'>
-                <div className='col-span-4'>
+                <div>
                     <h2 className='  text-black text-4xl font-bold pt-24 pb-8 '>Who We are</h2>
                 </div>
 
