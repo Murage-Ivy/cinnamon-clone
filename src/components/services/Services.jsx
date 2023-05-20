@@ -30,11 +30,11 @@ function Services() {
 
     const positionList = ['Web development', 'Mobile development', 'Quality assurance', 'Marketing', 'Project management', 'Human resources', 'Sales', 'Fluffy friends']
 
-    const positionItems = positionList.map((position, index) => <div className=' transition-all topic-hover relative py-4 hover:text-[#5135FF] hover:before:content-[""] hover:before: hover:before:border-[#5135FF] hover:before:w-[8%] hover:before:absolute hover:before:top-[50%] cursor-pointer' key={index}>
+    const positionItems = positionList.map((position, index) => <div className=' transition-all topic-hover relative py-4 hover:text-[#5135FF] hover:before:content-[""] hover:before:border-2 hover:before:border-[#5135FF] hover:before:w-[8%] hover:before:absolute hover:before:top-[50%] cursor-pointer' key={index}>
         <p className="text-xl font-bold tracking-wider hover:pl-14 transition-all topic-hover  " >{position}</p>
     </div>)
 
-    const serviceItems = serviceList.map(service => <div key={service.id} className='leading-10'>
+    const serviceItems = serviceList.map(service => <div key={service.id} className='leading-10 lg:px-8'>
         <div className='w-12 h-12 mt-8'>
             <img className="w-full" src={service.image} alt={service.title} />
         </div>
@@ -48,14 +48,17 @@ function Services() {
     return (
         <>
             <div className='py-24  px-10 bg-hero-pattern bg-secondary '>
-                <div>
+                <div className='lg:grid lg:grid-cols-[40%_1fr] lg:items-start '>
                     <h2 className='text-hero_header text-4xl font-bold pb-8 '>Our services</h2>
+                    <div className='lg:grid lg:grid-cols-2 lg:gap-4'>
                     {serviceItems}
-                    <div className='mt-12'>
+                    <div className='mt-12 lg:order-2'>
                         <button className=" transition-shadow duration-400 ease-in-out delay-0 hover:shadow-inset-white outline-none px-8 pt-4 pb-3 bg-[#5135FF] text-[#ffffff]  text-base font-medium hover:bg-white hover: border-[#5135FF] hover:text-[#5135FF]">
                             See Our Services
                         </button>
                     </div>
+                    </div>
+                 
                 </div>
             </div>
 
@@ -116,7 +119,7 @@ function Services() {
                     <h2 className='  text-black text-4xl font-bold pt-24 pb-8 '>Who We are</h2>
 
                     <div className='pt-8 pb-12'>
-                        <p className='relative text-[#5135FF] before:content-[""] before: before:border-[#5135FF] before:w-[15%] sm:before:w-[8%] before:absolute before:top-[50%] sm:before:top-[35%] before:left-0 font-bold tracking-widest pl-16'>Product design</p>
+                        <p className='relative text-[#5135FF] before:content-[""] before:border-2 before:border-[#5135FF] before:w-[15%] sm:before:w-[8%] before:absolute before:top-[50%] sm:before:top-[35%] before:left-0 font-bold tracking-widest pl-16'>Product design</p>
                     </div>
 
                     <div className='mt-8 md:order-1 md:block hidden' >{positionItems}</div>
@@ -124,7 +127,7 @@ function Services() {
                 </div>
 
                 <div className='pt-8 pb-12 hidden '>
-                    <p className='relative text-[#5135FF] before:content-[""] before: before:border-[#5135FF] before:w-[15%] before:absolute before:top-[50%] before:left-0 font-bold tracking-widest pl-16'>Product design</p>
+                    <p className='relative text-[#5135FF] before:content-[""] before:border-2 before:border-[#5135FF] before:w-[15%] before:absolute before:top-[50%] before:left-0 font-bold tracking-widest pl-16'>Product design</p>
                 </div>
                 <div className='md:order-2 '>
                     <div>
