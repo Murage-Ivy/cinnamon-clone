@@ -17,7 +17,7 @@ function Header() {
 
     })
     return (
-        <div className='sticky p-0 top-0 z-10  w-full  flex h-20 bg-hero-pattern bg-secondary transition-all duration-200  items-center justify-between'
+        <div className='sticky p-0 top-0 z-10 px-24 w-full  flex h-20 bg-hero-pattern bg-secondary transition-all duration-200  items-center justify-between'
             style={isScrolled ? { background: 'rgba(255,255,255)', color: 'black' } : null}>
             <Logo />
             <Menu isScrolled={isScrolled} />

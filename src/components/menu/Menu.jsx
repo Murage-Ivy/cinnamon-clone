@@ -11,7 +11,8 @@ function Menu({ isScrolled }) {
                 {navList.map((item, index) => <li key={index} className=' relative hover:text-[#5135FF] hover:before:content-[""] hover:before:absolute hover:before:w-[5px] hover:before:h-[5px] hover:before:border-2 hover:before:border-[#5135FF] hover:before:bg-[#5135FF] hover:before:top-[100%] hover:before:left-1/2 hover:before:rounded-full transition-all  px-2'>{item}</li>)}
             </ul>
             <div className='px-4'>
-                <MdPlayArrow className=' border-2  border-white rounded-full text-4xl text-white transform transition duration-300 hover:bg-[#5135FF]  hover:scale3d-100' />
+                <MdPlayArrow className=' border-2  border-white rounded-full text-4xl text-white transform transition duration-300 hover:bg-[#5135FF]  hover:scale3d-100'
+                    style={isScrolled ? { color: 'black', borderColor: "black" } : null} />
             </div>
 
             <div className=' pl-4'>
