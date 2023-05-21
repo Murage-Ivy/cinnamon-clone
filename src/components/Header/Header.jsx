@@ -17,12 +17,11 @@ function Header() {
 
     })
     return (
-        <div className='sticky p-0 top-0 z-10 px-24 w-full  flex h-20 bg-hero-pattern bg-secondary transition-all duration-200  items-center justify-between'
+        <div className='sticky p-0 top-0 z-10 px-5 lg:px-24 w-full  flex h-20 bg-hero-pattern bg-secondary transition-all duration-200  items-center justify-between'
             style={isScrolled ? { background: 'rgba(255,255,255)', color: 'black' } : null}>
-            <Logo />
+            <Logo isScrolled={isScrolled} />
             <Menu isScrolled={isScrolled} />
-            <HiMenuAlt1 className='text-2xl cursor-pointer text-hero_header lg:hidden' />
-
+            <HiMenuAlt1 className='text-2xl cursor-pointer text-hero_header  lg:hidden' style={{ color: isScrolled ? 'black' : 'white' }} />
         </div>
     )
 }

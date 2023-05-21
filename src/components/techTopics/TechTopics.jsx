@@ -74,8 +74,8 @@ function TechTopics() {
 
                 <div className="relative text-center mt-12 md:flex md:justify-between  md:py-48">
                     <div className='relative md:flex md:flex-col  md:items-center md:justify-center md:w-4/5 mx-auto ' >
-                        <h2 className='text-5xl font-bold pb-8 tracking-wider md:text-center md:w-full'>Have a project in mind?</h2>
-                        <h2 className=' text-5xl font-bold pb-8 tracking-wider '>
+                        <h2 className=' text-3xl md:text-5xl font-bold pb-8 tracking-wider md:text-center md:w-full'>Have a project in mind?</h2>
+                        <h2 className='text-3xl md:text-5xl font-bold pb-8 tracking-wider '>
                             Let's work together.
                         </h2>
                         <button className=' hover:bg-white hover:text-[#5135FF] hover:border-2 hover:border-[#5135FF] bg-[#5135FF] text-white pt-4 px-8 pb-3 text-center md:w-fit transition-all'>Contact us</button>

@@ -9,7 +9,7 @@ function CinnamonCollege() {
     </div>)
     return (<>
 
-        <div className='bg-white px-10 pt-24 lg:flex lg:justify-between lg:items-center '>
+        <div className='bg-white px-10 pt-24 lg:flex lg:justify-between lg:items-center lg:pl-24 lg:pr-0 '>
 
             <div>
                 <img className='lg:w-[80%]' src='./assets/images/cinn-college.ec0e9db3.svg' alt='college' />

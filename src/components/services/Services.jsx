@@ -62,7 +62,7 @@ function Services() {
                 </div>
             </div>
 
-            <div className='relative pb-24 grid gap-8 grid-rows-[1fr 1fr 1fr]  grid-cols-3 bg-[#F7F7F7]  px-10 lg:flex lg:justify-between lg:items-center lg:py-24'>
+            <div className='relative pb-24 grid gap-8 grid-rows-[1fr 1fr 1fr]  grid-cols-3 bg-[#F7F7F7]  px-10 lg:flex lg:justify-between lg:items-center lg:py-24 lg:px-24'>
                 <div className='col-span-4 '>
                     <h2 className=' lg:order-1 text-black text-4xl font-bold pt-24 pb-8 lg:text-6xl '>Agile team <br /> on demand</h2>
                 </div>
@@ -84,7 +84,7 @@ function Services() {
             </div>
 
 
-            <div className='bg-white py-24 px-10 flex flex-col lg:w-[80%]'>
+            <div className='bg-white py-24 px-10 flex flex-col lg:w-[80%] lg:px-24'>
                 <div className=''>
                 </div>
                 <div className='mb-8'>
@@ -114,7 +114,7 @@ function Services() {
                 </div>
             </div>
 
-            <div className='pb-24  bg-[#F7F7F7]  px-10 lg:grid lg:grid-cols-2 lg:items-center'>
+            <div className='pb-24  bg-[#F7F7F7]  px-10 lg:grid lg:grid-cols-2 lg:items-center lg:px-24'>
                 <div>
                     <h2 className='  text-black text-4xl font-bold pt-24 pb-8 '>Who We are</h2>
 
