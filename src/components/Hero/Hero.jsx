@@ -4,7 +4,7 @@ import { AiOutlineArrowDown } from 'react-icons/ai'
 function Hero() {
     return (
         <>
-            <div className=' relative px-10 bg-hero-pattern bg-secondary lg:px-24   '>
+            <div className=' relative px-5 bg-hero-pattern bg-secondary lg:px-24   '>
                 <div className='md:flex  md:justify-between md:py-48' >
                     <div className=''>
                         <div className='mb-6'>
@@ -39,7 +39,7 @@ function Hero() {
                 <div className='mt-12'>
                     <div className='bg-[#f1c40f]'>
                         <div className='transform hover:scale-105 transition duration-300'>
-                            <img clasName="" src='./assets/images/image_1.png' alt='code' />
+                            <img src='./assets/images/image_1.png' alt='code' />
                         </div>
                     </div>
                     <div className='mt-8'>

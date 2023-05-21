@@ -16,10 +16,10 @@ module.exports = {
       boxShadow: {
         "inset-white": "rgb(255, 255, 255) 0px 0px 0px 199px inset",
       },
-      transition:{
-        'transition': 'box-shadow all 0.5s ease-in-out',
-      }
+      transition: {
+        transition: "box-shadow all 0.5s ease-in-out",
+      },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-3d")({ legacy: true })],
 };

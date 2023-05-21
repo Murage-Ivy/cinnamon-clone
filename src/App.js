@@ -17,8 +17,8 @@ function App() {
           <Services />
           <CinnamonCollege />
           <Offices />
-          <TechTopics/>
-          <Footer/>
+          <TechTopics />
+          <Footer />
         </div>
       </main>
     </div>

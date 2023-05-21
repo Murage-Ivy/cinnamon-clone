@@ -3,7 +3,7 @@ import React from 'react'
 function CinnamonCollege() {
     const positions = ['Flutter Development Team Lead', 'Lead Generation Assistant', 'Mobile Development Team Lead',]
 
-    const positionItems = positions.map(position => <div className='grid grid-cols-[85%_auto] lg:grid-cols-[95%_auto]  lg:w-[70-] lg:mx-auto items-center  border-b-2 border-gray-600 py-6 text-white'>
+    const positionItems = positions.map((position, index) => <div key={index} className='grid grid-cols-[85%_auto] lg:grid-cols-[95%_auto]  lg:w-[70-] lg:mx-auto items-center  border-b-2 border-gray-600 py-6 text-white'>
         <p className='text-2xl  font-bold tracking-wider pr-3 lg:text-xl' >{position}</p>
         <img src='./assets/images/arrow_right.webp' alt={position} />
     </div>)
